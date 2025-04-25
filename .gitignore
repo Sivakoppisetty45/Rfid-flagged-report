@@ -1,10 +1,26 @@
-# .gitignore
-.env
-*.log
-export/
-# Python cache
+cat <<EOF > .gitignore
+# Python
 __pycache__/
 *.py[cod]
 *.pyc
 *.pyo
 *.pyd
+*.egg-info/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Logs and outputs
+logs/
+export/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+EOF
