@@ -1,7 +1,7 @@
 import requests
 from tenacity import retry, stop_after_attempt, wait_fixed
-from RFID_flagged_products_Email_Report.config.settings import API_KEY, ACCOUNT, API_ENDPOINT
-from RFID_flagged_products_Email_Report.config.logging_config import configure_logging
+from config.settings import API_KEY, ACCOUNT, API_ENDPOINT
+from config.logging_config import configure_logging
 
 logger = configure_logging()
 

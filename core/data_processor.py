@@ -1,8 +1,8 @@
 import concurrent.futures
 import pandas as pd
-from RFID_flagged_products_Email_Report.core.api_client import fetch_data
-from RFID_flagged_products_Email_Report.core.time_utils import divide_time_range
-from RFID_flagged_products_Email_Report.config.logging_config import configure_logging
+from core.api_client import fetch_data
+from core.time_utils import divide_time_range
+from config.logging_config import configure_logging
 
 logger = configure_logging()
 
