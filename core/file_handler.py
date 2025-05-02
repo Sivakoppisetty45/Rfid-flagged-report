@@ -5,9 +5,9 @@ from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.styles import NamedStyle
 from openpyxl.utils.exceptions import IllegalCharacterError
-from RFID_report.config.settings import EXPORT_DIR
-from RFID_report.config.logging_config import configure_logging
-from RFID_report.core.data_processor import remove_timestamp_columns
+from RFID_flagged_products_Email_Report.config.settings import EXPORT_DIR
+from RFID_flagged_products_Email_Report.config.logging_config import configure_logging
+from RFID_flagged_products_Email_Report.core.data_processor import remove_timestamp_columns
 
 logger = configure_logging()
 

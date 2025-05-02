@@ -1,9 +1,9 @@
 import time
-from RFID_report.config.settings import QUERIES
-from RFID_report.config.logging_config import configure_logging
-from RFID_report.core.time_utils import get_yesterday_time_range
-from RFID_report.core.data_processor import extract_data
-from RFID_report.core.file_handler import save_to_xlsx
+from RFID_flagged_products_Email_Report.config.settings import QUERIES
+from RFID_flagged_products_Email_Report.config.logging_config import configure_logging
+from RFID_flagged_products_Email_Report.core.time_utils import get_yesterday_time_range
+from RFID_flagged_products_Email_Report.core.data_processor import extract_data
+from RFID_flagged_products_Email_Report.core.file_handler import save_to_xlsx
 
 logger = configure_logging()
 

@@ -1,8 +1,8 @@
 import concurrent.futures
 import pandas as pd
-from RFID_report.core.api_client import fetch_data
-from RFID_report.core.time_utils import divide_time_range
-from RFID_report.config.logging_config import configure_logging
+from RFID_flagged_products_Email_Report.core.api_client import fetch_data
+from RFID_flagged_products_Email_Report.core.time_utils import divide_time_range
+from RFID_flagged_products_Email_Report.config.logging_config import configure_logging
 
 logger = configure_logging()
 
@@ -25,7 +25,6 @@ def fetch_data_parallel(nrql_query, time_chunks):
 
 def extract_data(nrql_query, start_time, end_time):
     """Fetch data in chunks for the given time range using parallel fetching."""
-    all_data = []
     time_chunks = divide_time_range(start_time, end_time)  # Divide into time chunks
     all_data = fetch_data_parallel(nrql_query, time_chunks)
     return all_data
